@@ -1,23 +1,45 @@
+<!doctype >
 <html>
 <head>
-	<title>Hello World!!!-----It's Oseni Adekunle</title>
+	<title>Adekunle Oseni</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Oseni Adekunle Personal Portfolio website">
+	<link rel="icon" type="image/png" href="image/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
-	<style type="text/css">
-		body{
-			background-color: #f5f5f4;
-			color: #262625;
-			font-family: 'Raleway', sans-serif;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			align-content: center;
-		}
-	</style>
 </head>
 <body>
-	<h3>Welcome to my World.</h3>
+	<div id="main">
+		<div class="head__section">
+			<img src="image/myCartoon.png">
+			<h1>Adekunle Oseni</h1>
+			<h3>Web Developer</h3>
+		</div>
+		<div class="body__section">
+			<p>Hello World! my name is Adekunle, and I am a Web Developer with an insatiable appetite to learn new skills in Technology.
+				<br>
+				I love to work with great teams to develop great apps that solve problems for people.
+				<br><br>
+				<i>have an offer for me?</i> <a href="" class="message" id="message">message</a>
+				</p>
+		</div>
+		<div class="social__section">
+		<a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+		<a href=""><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+		<a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+		<a href=""><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	
 </body>
+<script src="https://use.fontawesome.com/4fc38ccf64.js"></script>
+<script type="text/javascript">
+	var btn = document.getElementById('message');
+	btn.onclick = function(){
+		alert(1);
+		var link = "mailto:adekunleoseni47@gmail.com?subject=Let's Work Together";
+		window.location.href = link;
+		return false;
+	};
+</script>
 </html>
