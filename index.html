@@ -7,6 +7,7 @@
 	<link rel="icon" type="image/png" href="image/icon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+	
 </head>
 <body>
 	<div id="main">
@@ -20,7 +21,7 @@
 				<br>
 				I love to work with great teams to develop great apps that solve problems for people.
 				<br><br>
-				<i>have an offer for me?</i> <a href="" class="message" id="message">message</a>
+				<i>have an offer for me?</i> <a href="" class="message" id="message_btn">message</a>
 				</p>
 		</div>
 		
@@ -32,10 +33,39 @@
 		</div>
 	</div>
 
+	<div id="modal">
+		<div class="modal_mask"></div>
+		<div class="modal_content">
+			<div class="modal__head">
+				<h4>Leave a Message</h4>
+				<a href="" class="close_modal">&times;</a>
+			</div>
+			<div class="modal__body">
+				<div id="error-msg">please fill all the fields provided</div>
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" id="name" class="input-form" required="required">
+				</div>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" id="mail" class="input-form" required="required">
+				</div>
+				<div class="form-group">
+					<label>Message</label>
+					<textarea id="message" class="text-form" required="required"></textarea>
+				</div>
+				<div class="center"><button class="send-btn" id="send-btn">Send</button></div>
+			</div>
+		</div>
+	</div>
+
 </body>
 <script src="https://use.fontawesome.com/4fc38ccf64.js"></script>
-<script type="text/javascript">
-	var btn = document.getElementById('message');
-
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+   (function(){
+      emailjs.init("user_wVPfCECEJE2rlJCtYr11g");
+   })();
 </script>
+<script type="text/javascript" src="js/main.js"></script>
 </html>
