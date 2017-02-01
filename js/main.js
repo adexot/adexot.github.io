@@ -1,5 +1,8 @@
 window.onload = init;
-
+(function(){
+      emailjs.init("user_wVPfCECEJE2rlJCtYr11g");
+   })();
+   
 function init(){
 	document.getElementById('message_btn').onclick = function(){
 		document.getElementById('modal').style.display = 'block';
