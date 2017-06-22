@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^(css|js) - [F,L]
+
+ErrorDocument 404 /adexot.github.io/error_pages/404.html
