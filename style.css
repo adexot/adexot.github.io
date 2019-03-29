@@ -40,28 +40,32 @@ h1 {
     font-weight: 900;
     color: #191545;
     margin-top: 100px;
+    text-shadow: 4px 6px rgba(25, 21, 69, 0.3);
 }
 
 p {
     line-height: 1.52;
     font-size: 1.2rem;
+    font-weight: 300;
     color: rgb(25, 21, 69);
+    margin-top: 50px;
 }
 
 .wrapper {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     padding: 20px;
+    background-color: rgba(25, 21, 69, 0.05);
 }
 
 .content {
     max-width: 700px;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .social {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .social li {
@@ -78,6 +82,11 @@ a {
     color: #4433ff;
     text-decoration: none;
     display: inline-block;
+    transform: translateY(0);
+    transition: transform .1s linear;
+    user-select: none;
 }
 
-a:
+a:hover {
+    transform: translateY(-15%);
+}
