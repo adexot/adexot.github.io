@@ -5,3 +5,5 @@ out
 dist
 yarn.lock
 yarn-error.log
+.parcel*
+*cache
