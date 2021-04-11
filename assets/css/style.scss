@@ -49,8 +49,16 @@ ul {
 }
 
 h1 {
-  font-size: 100px;
   font-weight: 100;
+  font-size: 40px;
+
+  @include tablet {
+    font-size: 70px;
+  }
+
+  @include desktop {
+    font-size: 100px;
+  }
 }
 
 .center {
@@ -63,8 +71,16 @@ h1 {
 }
 
 .container {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
+
+  @include tablet {
+    width: 80%;
+  }
+
+  @include desktop {
+    width: 75%;
+  }
 }
 
 .nav {
@@ -73,8 +89,16 @@ h1 {
   justify-content: space-between;
   height: 100vh;
   position: fixed;
-  left: 5%;
+  left: 1%;
   padding: 100px 0 0;
+
+  @include tablet {
+    left: 3%;
+  }
+
+  @include desktop {
+    left: 5%;
+  }
 }
 
 .emoji-icon {
@@ -102,7 +126,7 @@ h1 {
 
 .email {
   position: fixed;
-  right: 60px;
+  right: 1%;
   bottom: 0;
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -115,6 +139,14 @@ h1 {
     display: inline-block;
     margin-top: 25px;
     animation: springUp .3s linear forwards;
+  }
+
+  @include tablet {
+    right: 3%;
+  }
+
+  @include desktop {
+    right: 5%;
   }
 }
 
