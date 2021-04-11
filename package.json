@@ -25,7 +25,9 @@
   "author": "Adekunle Oseni",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "2.0.0-beta.2",
     "@parcel/transformer-sass": "2.0.0-beta.2",
+    "@parcel/transformer-webmanifest": "2.0.0-beta.2",
     "breakpoint-sass": "^2.7.1",
     "parcel": "^2.0.0-beta.2",
     "posthtml-inline-svg": "^0.2.0"
