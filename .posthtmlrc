@@ -1,7 +1,7 @@
 {
   "plugins": {
     "posthtml-inline-svg": {
-      cwd: "./assets",
+      cwd: "./assets/icons",
     },
   },
 }
