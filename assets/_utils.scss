@@ -1,4 +1,4 @@
-@import 'breakpoint';
+@import 'breakpoint-sass';
 
 @mixin mobile {
   @include breakpoint(0 600px) {
