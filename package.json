@@ -2,7 +2,7 @@
   "name": "Oadex.dev",
   "version": "1.0.0",
   "description": "Adekunle Oseni",
-  "main": "index.html",
+  "main": "./assets/js/main.js",
   "scripts": {
     "dev": "parcel index.html -p 3000",
     "build": "parcel build index.html",
@@ -31,5 +31,8 @@
     "breakpoint-sass": "^2.7.1",
     "parcel": "^2.0.0-beta.2",
     "posthtml-inline-svg": "^0.2.0"
+  },
+  "dependencies": {
+    "figlet": "^1.5.0"
   }
 }
