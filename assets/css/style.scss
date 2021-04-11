@@ -1,5 +1,14 @@
 @import "./utils";
 
+@font-face {
+  font-family: SofiaPro;
+  src: local('SofiaPro'), local('SofiaPro'),
+    url(../fonts/sofiapro-light.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --primary: #000;
 }
@@ -7,7 +16,7 @@
 * {
   box-sizing: border-box;
   line-height: 1.5;
-  // margin-block-start: 0.67em;
+  margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
 }
@@ -16,7 +25,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Archivo", sans-serif;
+  font-family: 'SofiaPro', cursive;
   font-style: normal;
   font-weight: 400;
 }
@@ -37,6 +46,11 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: 100;
 }
 
 .center {
