@@ -1,1 +1,7 @@
 .vscode
+node_modules
+out
+.cache
+dist
+yarn.lock
+yarn-error.log
