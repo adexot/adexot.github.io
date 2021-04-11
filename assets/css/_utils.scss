@@ -13,7 +13,7 @@
 }
 
 @mixin desktop {
-  @include breakpoint(1200px) {
+  @include breakpoint(1020px) {
     @content;
   }
 }
