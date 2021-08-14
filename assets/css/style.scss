@@ -121,6 +121,17 @@ p {
   left: 1%;
   padding: 100px 0 0;
 
+  @include mobile {
+    flex-direction: row;
+    height: 70px;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+    padding-top: 20px;
+    background-color: rgba(25, 21, 69, 0.01);
+    backdrop-filter: blur(3px);
+  }
+
   @include tablet {
     left: 3%;
   }
@@ -132,6 +143,10 @@ p {
 
 .emoji-icon {
   font-size: 30px;
+
+  @include mobile {
+    padding-left: 20px;
+  }
 }
 
 .social-icons {
@@ -139,8 +154,16 @@ p {
   flex-direction: column;
   align-items: center;
 
+  @include mobile {
+    flex-direction: row;
+  }
+
   li {
     margin: 20px 0;
+
+    @include mobile {
+      padding: 0 20px;
+    }
   }
 
   &::after {
@@ -156,7 +179,6 @@ p {
   position: fixed;
   right: 1%;
   bottom: 0;
-  writing-mode: vertical-rl;
   text-orientation: mixed;
 
   &::after {
@@ -166,14 +188,28 @@ p {
     display: inline-block;
     margin-top: 25px;
     animation: springUp .3s linear forwards;
+
+    @include mobile {
+      content: none;
+    }
+  }
+
+  @include mobile {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
   }
 
   @include tablet {
     right: 3%;
+    writing-mode: vertical-rl;
   }
 
   @include desktop {
     right: 5%;
+    writing-mode: vertical-rl;
   }
 }
 
@@ -188,7 +224,10 @@ p {
 .intro {
   height: 100%;
   margin: 50px 0 200px 0;
-  max-width: 80%;
+
+  @include tablet {
+    max-width: 80%;
+  }
 }
 
 @keyframes springUp {
@@ -204,7 +243,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   height: 100%;
 
   &-item {
