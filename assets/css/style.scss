@@ -19,7 +19,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   background-color: var(--bg);
   color: var(--primary);
 }
@@ -44,15 +44,34 @@ ul {
 
 h1 {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 2.5rem;
 
   @include tablet {
     font-size: 80px;
   }
 
   @include desktop {
-    font-size: 100px;
+    font-size: 6.25rem;
   }
+}
+
+h3,h4 {
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2;
 }
 
 .center {
@@ -62,6 +81,22 @@ h1 {
 .text-stroke {
   -webkit-text-fill-color: var(--bg);
   -webkit-text-stroke: 1px var(--primary);
+}
+
+.heading {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: var(--primary);
+  }
+}
+
+.underline {
+  border-bottom: 0.1rem double var(--primary);
+  display: inline;
+  width: fit-content;
 }
 
 .container {
@@ -86,6 +121,17 @@ h1 {
   left: 1%;
   padding: 100px 0 0;
 
+  @include mobile {
+    flex-direction: row;
+    height: 70px;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+    padding-top: 20px;
+    background-color: rgba(25, 21, 69, 0.01);
+    backdrop-filter: blur(3px);
+  }
+
   @include tablet {
     left: 3%;
   }
@@ -97,6 +143,10 @@ h1 {
 
 .emoji-icon {
   font-size: 30px;
+
+  @include mobile {
+    padding-left: 20px;
+  }
 }
 
 .social-icons {
@@ -104,14 +154,21 @@ h1 {
   flex-direction: column;
   align-items: center;
 
+  @include mobile {
+    flex-direction: row;
+  }
+
   li {
     margin: 20px 0;
+
+    @include mobile {
+      padding: 0 20px;
+    }
   }
 
   &::after {
     content: '';
     width: 1px;
-    // height: 80px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2);
     display: inline-block;
     animation: springUp .3s linear forwards;
@@ -122,34 +179,55 @@ h1 {
   position: fixed;
   right: 1%;
   bottom: 0;
-  writing-mode: vertical-rl;
   text-orientation: mixed;
 
   &::after {
     content: '';
     width: 1px;
-    // height: 80px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2);
     display: inline-block;
     margin-top: 25px;
     animation: springUp .3s linear forwards;
+
+    @include mobile {
+      content: none;
+    }
+  }
+
+  @include mobile {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
   }
 
   @include tablet {
     right: 3%;
+    writing-mode: vertical-rl;
   }
 
   @include desktop {
     right: 5%;
+    writing-mode: vertical-rl;
   }
 }
 
-.intro {
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.intro {
+  height: 100%;
+  margin: 50px 0 200px 0;
+
+  @include tablet {
+    max-width: 80%;
+  }
 }
 
 @keyframes springUp {
@@ -158,5 +236,22 @@ h1 {
   }
   to{
     height: 80px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  height: 100%;
+
+  &-item {
+    width: 100%;
+    margin-bottom: 50px;
+
+    @include tablet {
+      width: 45%;
+    }
   }
 }
