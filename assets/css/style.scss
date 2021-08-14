@@ -1,13 +1,5 @@
 @import "./utils";
 
-@font-face {
-  font-family: SofiaPro;
-  src: local('SofiaPro'), url(../fonts/sofiapro-light.otf) format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --primary: rgb(25, 21, 69);
   --bg: rgba(25, 21, 69, 0.05);
@@ -25,7 +17,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'SofiaPro', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: var(--bg);
@@ -51,7 +43,7 @@ ul {
 }
 
 h1 {
-  font-weight: 100;
+  font-weight: 900;
   font-size: 40px;
 
   @include tablet {
