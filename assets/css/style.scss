@@ -83,6 +83,16 @@ p {
   -webkit-text-stroke: 1px var(--primary);
 }
 
+.heading {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: var(--primary);
+  }
+}
+
 .underline {
   border-bottom: 0.1rem double var(--primary);
   display: inline;
@@ -178,6 +188,7 @@ p {
 .intro {
   height: 100%;
   margin: 50px 0 200px 0;
+  max-width: 80%;
 }
 
 @keyframes springUp {
