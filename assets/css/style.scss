@@ -19,7 +19,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
   background-color: var(--bg);
   color: var(--primary);
 }
@@ -34,6 +34,11 @@ a {
   cursor: pointer;
   border: 0;
   outline: 0;
+  transition: opacity 0.15s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 ul {
