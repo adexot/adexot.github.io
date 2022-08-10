@@ -1,17 +1,85 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component front matter". It never runs in the browser.
-console.log('This runs in your terminal, not the browser!');
+import PageLayout from "../layouts/PageLayout.astro";
 ---
-<!-- Below is your "component template." It's just HTML, but with
-     some magic sprinkled in to help you build great templates. -->
-<html>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
-</html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
+
+<PageLayout>
+  <main class="container">
+    <header class="section">
+      <h1 class="name"><span class="text-stroke">Oseni</span> Adekunle.</h1>
+      <h1 class="name">
+        <span class="text-stroke">Software</span> Engineer.
+      </h1>
+      <h1 class="name"><span class="text-stroke">Amsterdam,</span> <br> The
+        Netherlands.</h1>
+    </header>
+    <section class="intro">
+      <h3>Hey there 👋🏾,</h3>
+      <p>I am Adekunle, mostly called Kunle (Koon-lay) in short.</p>
+      <p> I
+        love the web with all my heart, being an introvert who likes to spend a
+        good chunk of my time surfing the web.</p>
+      <p>I work as a Software Engineer, specializing in Frontend technologies. I
+        have an unwavering desire to build performant web
+        applications at scale.</p>
+      <p>Favourite catch phrase is: "Always betting on the Web"</p>
+    </section>
+    <section class="section">
+      <h3 class="heading">Work History</h3>
+      <div class="flex">
+        <div class="flex-item">
+          <h4>Momentive AI</h4>
+          <p>
+            Currently work here on the Act team for the
+            <a class="underline" href="https://www.getfeedback.com/"
+              rel="noopener" target="_blank"
+              aria-label="Getfeedback">GetFeedback</a> platform. My day-to-day
+            involves building out web experiences for the Automations Layer.
+          </p>
+        </div>
+        <div class="flex-item">
+          <h4>Deimos Cloud</h4>
+          <p>
+            Love at first hearing 😀
+          </p>
+          <p>I worked at <a class="underline" href="https://deimos.io/"
+              rel="noopener" target="_blank" aria-label="Deimos">Deimos</a>
+            firstly as a Contractor, before transitioning
+            into full-time role; after a slightly disappointing experience at a
+            previous job where I had a short stint.</p>
+          <p>I had a great time here, working with A+ team to help businesses
+            build Cloud Native applications with best practices baked in.</p>
+          <p>🚀 Proudly a Deimos martian and Alumnus </p>
+        </div>
+        <div class="flex-item">
+          <h4>Konga Online Shopping Ltd.</h4>
+          <p>
+            Joined Konga as an Engineering Cadet, straight out of university.
+            I was sold the mission to rebuild the customer facing web app
+            <a class="underline" href="https://www.konga.com/" rel="noopener"
+              target="_blank" aria-label="Konga">Konga</a>, with a focus on
+            performance, responsiveness,
+            accessibility, reduced cost of operation, and of course a better
+            developer experience.
+          </p>
+          <p>I got excited about the mission and rolled my sleeves to join the
+            team at work. We deployed the first release of the new application
+            about 7 months later, for yakata sales.</p>
+          <p>In this time, I got retained as a Software Engineer contributing to
+            the engineering goals.</p>
+        </div>
+        <div class="flex-item">
+          <h4>Hotels NG</h4>
+          <p>
+            Humble beginning as a candidate of the first HNG internship in 2016.
+            This was a great experience that introduced me to the world of
+            professional work setting.
+          </p>
+          <p>Fortunately, I finished as one of the few finalists with other
+            awesome folks who are still my guyz till date. :smile:</p>
+          <p>HNG was an eye opener and I'm a product of the internship who has
+            moved on to make a decent career, just like many others.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</PageLayout>
