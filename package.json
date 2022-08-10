@@ -1,11 +1,12 @@
 {
   "name": "oadex.dev",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "description": "Adekunle Oseni",
   "scripts": {
-    "dev": "parcel index.html -p 3000",
-    "build": "parcel build ./index.html",
-    "clean": "rm -rf .cache .parcel-cache dist"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "keywords": [
     "Adekunle",
@@ -24,15 +25,10 @@
   "author": "Adekunle Oseni",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.0.0-rc.0",
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "2.0.0-rc.0",
-    "@parcel/transformer-webmanifest": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-beta.2",
-    "posthtml-inline-svg": "^0.2.0"
+    "astro": "^1.0.1",
+    "breakpoint-sass": "^2.7.1"
   },
   "dependencies": {
-    "breakpoint-sass": "^2.7.1",
     "figlet": "^1.5.0"
   }
 }
