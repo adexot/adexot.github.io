@@ -1,5 +1,6 @@
 ---
-import './../../assets/css/style.scss';
+import '../assets/css/style.scss';
+import { Icon } from 'astro-icon';
 ---
 
 <!DOCTYPE html>
@@ -40,24 +41,26 @@ import './../../assets/css/style.scss';
     <ul class="social-icons">
       <li>
         <a href="https://github.com/adexot" rel="noopener" target="_blank" aria-label="Github">
-          <icon src="github.svg" alt="github" height="20" width="20" />
+          <Icon name="github" height="20" width="20"/>
         </a>
       </li>
       <li>
         <a href="https://twitter.com/oadex_09" rel="noopener" target="_blank" aria-label="Twitter">
-          <icon src="twitter.svg" alt="twitter" height="20" width="20" />
+          <Icon name="twitter" height="20" width="20"/>
         </a>
       </li>
       <li>
         <a href="https://www.linkedin.com/in/adekunle-oseni" rel="noopener" target="_blank" aria-label="LinkedIn">
-          <icon src="linkedin.svg" alt="linkedin" height="20" width="20" />
+          <Icon name="linkedin" height="20" width="20"/>
         </a>
       </li>
     </ul>
   </nav>
   <slot />
   <a href="mailto:adekunleoseni47@gmail.com&subject=Hey%20Adekunle" class="email">adekunleoseni47@gmail.com</a>
-  <script src="./assets/js/main.js" type="module" async></script>
+  <script>
+    import '../assets/js/main.js';
+  </script>
 </body>
 
 </html>
