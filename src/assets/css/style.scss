@@ -1,8 +1,15 @@
 @import "./utils";
+@import "./fonts";
 
 :root {
   --primary: rgb(25, 21, 69);
   --bg: rgba(25, 21, 69, 0.05);
+  --font-extra-light: 'ClashDisplay-Extralight', 'Montserrat', sans-serif;
+  --font-light: 'ClashDisplay-Light', 'Montserrat', sans-serif;
+  --font-regular: 'ClashDisplay-Regular', 'Montserrat', sans-serif;
+  --font-medium: 'ClashDisplay-Medium', 'Montserrat', sans-serif;
+  --font-bold: 'ClashDisplay-Bold', 'Montserrat', sans-serif;
+  --font-semi-bold: 'ClashDisplay-Semibold', 'Montserrat', sans-serif;
 }
 
 * {
@@ -17,11 +24,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-light);
   font-style: normal;
-  font-weight: 200;
+  word-spacing: 0.3em;
   background-color: var(--bg);
   color: var(--primary);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -48,7 +56,7 @@ ul {
 }
 
 h1 {
-  font-weight: 900;
+  font-family: var(--font-bold);
   font-size: 2.5rem;
 
   @include tablet {
@@ -61,7 +69,7 @@ h1 {
 }
 
 h3,h4 {
-  font-weight: 400;
+  font-family: var(--font-regular);
 }
 
 h3 {
