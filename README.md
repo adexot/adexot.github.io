@@ -1,4 +1,4 @@
-# Oadex.dev
+# Adexot.me / Oadex.dev
 
 A personal website to showcase portfolio and experiment with awesome technologies.
 
