@@ -35,6 +35,8 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  display: inline-block;
+  line-height: 1;
 }
 
 button,
@@ -139,13 +141,16 @@ p {
 
   @include mobile {
     flex-direction: row;
+    align-items: center;
     height: 70px;
-    left: 0;
-    width: 100%;
+    left: 5%;
+    top: 10px;
+    width: 90%;
     padding-top: 0;
-    padding-top: 20px;
-    background-color: rgba(25, 21, 69, 0.01);
+    background-color: rgba(25, 21, 69, 0.1);
     backdrop-filter: blur(3px);
+    border-radius: 8px;
+    margin: 0 auto;
   }
 
   @include tablet {
@@ -179,6 +184,8 @@ p {
 
     @include mobile {
       padding: 0 20px;
+      margin: 0;
+      line-height: 1;
     }
   }
 
@@ -188,6 +195,10 @@ p {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2);
     display: inline-block;
     animation: springUp .3s linear forwards;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -247,10 +258,11 @@ p {
 }
 
 @keyframes springUp {
-  from{
+  from {
     height: 0;
   }
-  to{
+
+  to {
     height: 80px;
   }
 }
