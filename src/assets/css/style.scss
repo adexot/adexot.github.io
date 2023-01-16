@@ -283,3 +283,40 @@ p {
     }
   }
 }
+
+@keyframes glowUp {
+  0% {
+    transform: translate3d(0, 50%, 0);
+    transition: transform .2s;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0);
+    opacity: 1;
+  }
+}
+
+.glow-wrap {
+  overflow: hidden;
+}
+
+.glow-1 {
+  animation: glowUp .5s ease .05s forwards, opacity .5s ease 0s;
+  display: inline-block;
+}
+
+.glow-2 {
+  animation: glowUp .5s ease .15s forwards, opacity .5s ease 0s;
+  display: inline-block;
+}
+
+.glow-3 {
+  animation: glowUp .5s ease .25s forwards, opacity .5s ease 0s;
+  display: inline-block;
+}
+
+.glow-4 {
+  animation: glowUp .5s ease .35s forwards, opacity .5s ease 0s;
+  display: inline-block;
+}
