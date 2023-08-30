@@ -9,9 +9,9 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.4
-        # with:
-        #   node-version: 18.x
-        #   cache: npm
+        with:
+          node-version: 18.x
+          cache: npm
 
       - name: Install and Build 🔧 
         run: |
