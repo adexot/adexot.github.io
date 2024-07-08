@@ -1,4 +1,4 @@
-# Adexot.me / Oadex.dev
+# adexot.github.io
 
 A personal website to showcase portfolio and experiment with awesome technologies.
 
