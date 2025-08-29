@@ -1,5 +1,6 @@
 @import "./utils";
 @import "./fonts";
+@import "./animations.scss";
 
 :root {
   --primary: rgb(25, 21, 69);
@@ -66,7 +67,7 @@ h1 {
   }
 
   @include desktop {
-    font-size: 6.25rem;
+    font-size: 5.25rem;
   }
 }
 
@@ -257,15 +258,7 @@ p {
   }
 }
 
-@keyframes springUp {
-  from {
-    height: 0;
-  }
 
-  to {
-    height: 80px;
-  }
-}
 
 .flex {
   display: flex;
@@ -284,18 +277,7 @@ p {
   }
 }
 
-@keyframes glowUp {
-  0% {
-    transform: translate3d(0, 50%, 0);
-    transition: transform .2s;
-    opacity: 0;
-  }
 
-  100% {
-    transform: translate3d(0);
-    opacity: 1;
-  }
-}
 
 .glow-wrap {
   overflow: hidden;
@@ -319,4 +301,14 @@ p {
 .glow-4 {
   animation: glowUp .5s ease .35s forwards, opacity .5s ease 0s;
   display: inline-block;
+}
+
+.wave {
+  animation: wave 1s ease .5s infinite, opacity .5s ease 0s;
+  display: inline-block;
+}
+
+.years{
+  opacity: 0.55;
+  font-size: 1rem;
 }
