@@ -162,5 +162,19 @@
                 float: right;
             }
         }
+
+        &-item {
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid rgba(213, 213, 213, 0.3);
+            transition: transform 0.3s;
+            &:hover {
+                @include tablet {
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+                    transform: translateY(-5px);
+                    transition: transform 0.3s;
+                }
+            }
+        }
     }
 </style>
