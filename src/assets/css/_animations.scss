@@ -31,3 +31,9 @@
     opacity: 1;
   }
 }
+
+@keyframes scrollLeft {
+  to {
+    left: (-100px);
+  }
+}

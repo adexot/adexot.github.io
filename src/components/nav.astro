@@ -1,0 +1,76 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<nav class="nav">
+    <a class="emoji-icon" href="/">&lt;/&gt;</a>
+    <a class="emoji-icon" href="/til">TIL</a>
+    <ul class="social-icons">
+        <li>
+            <a
+                href="https://github.com/adexot"
+                rel="noopener"
+                target="_blank"
+                aria-label="Github"
+            >
+                <Icon name="github" height={20} width={20} />
+            </a>
+        </li>
+        <li>
+            <a
+                href="https://twitter.com/oadex_09"
+                rel="noopener"
+                target="_blank"
+                aria-label="Twitter"
+            >
+                <Icon name="twitter" height={20} width={20} />
+            </a>
+        </li>
+        <li>
+            <a
+                href="https://www.linkedin.com/in/adekunle-oseni"
+                rel="noopener"
+                target="_blank"
+                aria-label="LinkedIn"
+            >
+                <Icon name="linkedin" height={20} width={20} />
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<style lang="scss">
+    @import "../assets/css/_utils.scss";
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        position: fixed;
+        left: 1%;
+        padding: 100px 0 0;
+
+        @include mobile {
+            flex-direction: row;
+            align-items: center;
+            height: 50px;
+            left: 5%;
+            top: 5px;
+            width: 90%;
+            padding-top: 0;
+            background-color: rgba(25, 21, 69, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            margin: 0 auto;
+        }
+
+        @include tablet {
+            left: 3%;
+        }
+
+        @include desktop {
+            left: 5%;
+        }
+    }
+</style>

@@ -131,37 +131,7 @@ p {
   }
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  position: fixed;
-  left: 1%;
-  padding: 100px 0 0;
 
-  @include mobile {
-    flex-direction: row;
-    align-items: center;
-    height: 50px;
-    left: 5%;
-    top: 5px;
-    width: 90%;
-    padding-top: 0;
-    background-color: rgba(25, 21, 69, 0.25);
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    margin: 0 auto;
-  }
-
-  @include tablet {
-    left: 3%;
-  }
-
-  @include desktop {
-    left: 5%;
-  }
-}
 
 .emoji-icon {
   font-size: 30px;
