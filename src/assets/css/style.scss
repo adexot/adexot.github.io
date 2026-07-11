@@ -5,12 +5,12 @@
 :root {
   --primary: rgb(25, 21, 69);
   --bg: rgba(25, 21, 69, 0.05);
-  --font-extra-light: 'ClashDisplay-Extralight', 'Montserrat', sans-serif;
-  --font-light: 'ClashDisplay-Light', 'Montserrat', sans-serif;
-  --font-regular: 'ClashDisplay-Regular', 'Montserrat', sans-serif;
-  --font-medium: 'ClashDisplay-Medium', 'Montserrat', sans-serif;
-  --font-bold: 'ClashDisplay-Bold', 'Montserrat', sans-serif;
-  --font-semi-bold: 'ClashDisplay-Semibold', 'Montserrat', sans-serif;
+  --font-extra-light: "Space Grotesk", 'ClashDisplay-Extralight', 'Montserrat', sans-serif;
+  --font-light: "Space Grotesk", 'ClashDisplay-Light', 'Montserrat', sans-serif;
+  --font-regular: "Space Grotesk", 'ClashDisplay-Regular', 'Montserrat', sans-serif;
+  --font-medium: "Space Grotesk", 'ClashDisplay-Medium', 'Montserrat', sans-serif;
+  --font-bold: "Space Grotesk", 'ClashDisplay-Bold', 'Montserrat', sans-serif;
+  --font-semi-bold: "Space Grotesk", 'ClashDisplay-Semibold', 'Montserrat', sans-serif;
 }
 
 * {
@@ -60,6 +60,7 @@ ul {
 
 h1 {
   font-family: var(--font-bold);
+  font-weight: 500;
   font-size: 2.5rem;
 
   @include tablet {
@@ -103,6 +104,7 @@ p {
 }
 
 .heading {
+margin-top: 50px;
   &::after {
     content: '';
     display: inline-block;
@@ -219,7 +221,7 @@ p {
   min-height: 100vh;
 }
 
-.intro {
+.intro-exp {
   height: 100%;
   margin: 50px 0 200px 0;
 
@@ -341,4 +343,28 @@ p {
 .years{
   opacity: 0.55;
   font-size: 1rem;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, #d62d2d26 1.5px, #0000 1.5px);
+  background-image: radial-gradient(circle, lab(.903296% 0 0 / .15) 1.5px, #0000 1.5px);
+  background-size: 24px 24px;
+}
+
+// Scroll section styles
+.scroll-wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  height: 100dvh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scroll-section {
+  scroll-snap-align: start;
+  min-height: 100%;
 }
