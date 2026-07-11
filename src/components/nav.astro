@@ -48,6 +48,7 @@ import { Icon } from "astro-icon/components";
         justify-content: space-between;
         height: 100vh;
         position: fixed;
+        z-index: 999;
         left: 1%;
         padding: 100px 0 0;
 
@@ -56,12 +57,13 @@ import { Icon } from "astro-icon/components";
             align-items: center;
             height: 50px;
             left: 5%;
-            top: 5px;
             width: 90%;
             padding-top: 0;
-            background-color: rgba(25, 21, 69, 0.25);
-            backdrop-filter: blur(10px);
-            border-radius: 50px;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            backdrop-filter: blur(17.1px);
+            -webkit-backdrop-filter: blur(17.1px);
             margin: 0 auto;
         }
 
