@@ -1,16 +1,15 @@
-@import "./utils";
-@import "./fonts";
-@import "./animations.scss";
+@use "./utils" as *;
+@use "./animations.scss" as *;
 
 :root {
   --primary: rgb(25, 21, 69);
   --bg: rgba(25, 21, 69, 0.05);
-  --font-extra-light: "Space Grotesk", 'ClashDisplay-Extralight', 'Montserrat', sans-serif;
-  --font-light: "Space Grotesk", 'ClashDisplay-Light', 'Montserrat', sans-serif;
-  --font-regular: "Space Grotesk", 'ClashDisplay-Regular', 'Montserrat', sans-serif;
-  --font-medium: "Space Grotesk", 'ClashDisplay-Medium', 'Montserrat', sans-serif;
-  --font-bold: "Space Grotesk", 'ClashDisplay-Bold', 'Montserrat', sans-serif;
-  --font-semi-bold: "Space Grotesk", 'ClashDisplay-Semibold', 'Montserrat', sans-serif;
+  --font-extra-light: "Space Grotesk", 'Montserrat', sans-serif;
+  --font-light: "Space Grotesk", 'Montserrat', sans-serif;
+  --font-regular: "Space Grotesk", 'Montserrat', sans-serif;
+  --font-medium: "Space Grotesk", 'Montserrat', sans-serif;
+  --font-bold: "Space Grotesk", 'Montserrat', sans-serif;
+  --font-semi-bold: "Space Grotesk", 'Montserrat', sans-serif;
 }
 
 * {
