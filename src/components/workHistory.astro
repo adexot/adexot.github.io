@@ -1,4 +1,4 @@
-<section class="section" id="work-history">
+<section class="section scroll-section" id="work-history">
     <h3 class="heading center">Work History</h3>
     <ul class="flex">
         <!-- SurveyMonkey -->
@@ -20,7 +20,7 @@
                     simplify how users visualize raw data using charts, tables,
                     open text etc.
                 </p>
-                <p>
+                <!-- <p>
                     Previously worked on the CRM team for the
                     <a
                         class="underline"
@@ -28,9 +28,9 @@
                         rel="noopener"
                         target="_blank"
                         aria-label="Getfeedback">GetFeedback</a
-                    > platform; building web experiences for the Automations and
-                    Integrations Layer.
-                </p>
+                    > platform; building web experiences for the Automations and Integrations
+                    Layer.
+                </p> -->
             </div>
         </li>
 
@@ -52,10 +52,13 @@
                 </p>
                 <p>
                     Built a PWA for a logistics company in the Middle-Eastern
-                    region that serves over a million users. This required
-                    building out a Web app and a GraphQL server that served as
-                    the BFF (Backend for Frontend) layer for aggregating data
-                    from backend services.
+                    region that serves over a million users.
+                    <!-- <span>
+                        This required
+                        building out a Web app and a GraphQL server that served as
+                        the BFF (Backend for Frontend) layer for aggregating data
+                        from backend services.
+                    </span> -->
                 </p>
                 <h5>Proud Deimos Alumnus; To the moon 🚀</h5>
             </div>
@@ -74,9 +77,20 @@
                     >, <span class="years">2018 - 2019</span>
                 </h4>
                 <p>
+                    Built <a
+                        class="underline"
+                        href="https://www.konga.com/"
+                        rel="noopener"
+                        target="_blank"
+                        aria-label="Konga">Konga</a
+                    > customer facing web app. The app was shipped in 7 months and
+                    generated billions in revenue for the e-commerce giant during
+                    its Yakata sales.
+                </p>
+                <!-- <p>
                     Joined Konga as an Engineering Cadet, straight out of
                     university. I was sold the mission to rebuild the customer
-                    facing web app
+                    facing web app&nbsp;
                     <a
                         class="underline"
                         href="https://www.konga.com/"
@@ -97,7 +111,7 @@
                 <p>
                     In this time, I got retained as a Software Engineer
                     contributing to the engineering goals.
-                </p>
+                </p> -->
             </div>
         </li>
 
@@ -114,26 +128,23 @@
                     >, <span class="years">2016</span>
                 </h4>
                 <p>
-                    Humble beginning as a candidate of the first HNG internship
-                    in 2016. This was a great experience that introduced me to
-                    the world of professional work setting.
+                    Joined HNG internship in 2016. This was a great experience
+                    that introduced me to the world of professional work
+                    setting.
                 </p>
-                <p>
-                    Finished as one of the few finalists with other awesome
-                    folks.
-                </p>
-                <p>
+                <p>Finished as a finalists with a few other awesome folks.</p>
+                <!-- <p>
                     HNG was an eye opener and I'm a product of the internship
                     who has moved on to make a decent career, just like many
                     others.
-                </p>
+                </p> -->
             </div>
         </li>
     </ul>
 </section>
 
 <style lang="scss">
-    @import "../assets/css/_utils.scss";
+    @use "../assets/css/_utils.scss" as *;
     /* timeline style */
     .flex {
         position: relative;
@@ -165,12 +176,9 @@
 
         &-item {
             padding: 20px;
-            border-radius: 12px;
-            border: 2px solid rgba(213, 213, 213, 0.3);
             transition: transform 0.3s;
             &:hover {
                 @include tablet {
-                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
                     transform: translateY(-5px);
                     transition: transform 0.3s;
                 }

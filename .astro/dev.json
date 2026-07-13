@@ -1,0 +1,13 @@
+{
+	"pid": 89358,
+	"port": 8000,
+	"url": "http://localhost:8000",
+	"urls": {
+		"local": [
+			"http://localhost:8000/"
+		],
+		"network": []
+	},
+	"background": false,
+	"startedAt": "2026-07-11T22:15:30.469Z"
+}
