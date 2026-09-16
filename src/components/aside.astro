@@ -1,0 +1,73 @@
+---
+import ReactIsland from "./ReactIsland";
+---
+
+<aside class="aside">
+    <a
+        href="mailto:adekunleoseni47@gmail.com&subject=Hey%20Adekunle"
+        class="email">adekunleoseni47@gmail.com</a
+    >
+    <ReactIsland client:media="(min-width: 768px)" />
+</aside>
+
+<style lang="scss">
+    @import "../assets/css/_utils.scss";
+
+    .aside {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            position: fixed;
+            z-index: 999;
+            right: 1%;
+            bottom: 0;
+            padding: 0;
+        }
+
+        @include desktop {
+            right: 5%;
+        }
+    }
+
+    .email {
+        text-orientation: mixed;
+
+        &::after {
+            content: "";
+            width: 1px;
+            background:
+                linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-top: 25px;
+            animation: springUp 0.3s linear forwards;
+
+            @include mobile {
+                content: none;
+            }
+        }
+
+        @include mobile {
+            position: relative;
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        @include tablet {
+            right: 3%;
+            writing-mode: vertical-rl;
+        }
+
+        @include desktop {
+            right: 5%;
+            writing-mode: vertical-rl;
+        }
+    }
+</style>
