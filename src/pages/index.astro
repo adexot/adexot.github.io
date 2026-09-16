@@ -1,8 +1,6 @@
 ---
 import Header from "../components/header.astro";
 import Intro from "../components/intro.astro";
-import ReactIsland from "../components/ReactIsland.jsx";
-// import Tech from "../components/tech.astro";
 import WorkHistory from "../components/workHistory.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 ---
@@ -12,6 +10,5 @@ import PageLayout from "../layouts/PageLayout.astro";
         <Header />
         <Intro />
         <WorkHistory />
-        <ReactIsland client:media="(min-width: 768px)" />
     </main>
 </PageLayout>
