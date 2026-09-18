@@ -22,6 +22,9 @@ dependencies:
     version: 19.3.0(react@19.3.0)
 
 devDependencies:
+  '@types/react':
+    specifier: ^19.3.0
+    version: 19.3.0
   astro:
     specifier: ^7.0.7
     version: 7.0.7(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(sass@1.101.0)
@@ -1545,7 +1548,6 @@ packages:
     resolution: {integrity: sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==}
     dependencies:
       csstype: 3.2.3
-    dev: false
 
   /@types/unist@3.0.3:
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -1920,7 +1922,6 @@ packages:
 
   /csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
-    dev: false
 
   /debug@4.4.3:
     resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
