@@ -25,6 +25,7 @@
   "author": "Adekunle Oseni",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^19.3.0",
     "astro": "^7.0.7",
     "astro-icon": "^1.1.5",
     "breakpoint-sass": "^3.0.0",
